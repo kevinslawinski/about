@@ -5,7 +5,7 @@ name: Build & Test
 
 on:
   push:
-    branches: ['main', 'configs']
+    branches: ['main']
   pull_request:
     branches: ['main']
 
