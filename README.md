@@ -1,3 +1,5 @@
+[![Build & Test](https://github.com/kevinslawinski/about/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/kevinslawinski/about/actions/workflows/build-and-test.yml)
+
 # AboutMe
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
