@@ -1,7 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import './_variables';
 @import './normalize.css';
 @import './skeleton.css';
+
+body {
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+}
+
+a {
+  color: var(--link);
+}
+
+a:hover {
+  color: var(--link-hover);
+}
 
 .center {
   text-align: center;
@@ -16,17 +30,17 @@
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: #fff;
-  background-color: #454545;
+  color: var(--text-light);
+  background-color: var(--neutral);
 }
 .fa:hover {
-  background-color: #323232;
+  background-color: var(--neutral-dark);
 }
 .header {
   text-align: center;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: var(--background-primary);
   /* box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1); */
   /* Using an <hr> tag instead of the shadow */
   z-index: 100;
@@ -49,7 +63,7 @@
   text-decoration: none;
 }
 .present {
-  color: #ff58f6; /* change this color to something more pleasing */
+  color: var(--present);
   text-decoration: underline;
 }
 .profile {
@@ -59,4 +73,48 @@
 ul,
 li {
   line-height: 1.4em;
+}
+
+/* Button styling to match color palette */
+.button.button-primary,
+button.button-primary,
+input[type='submit'].button-primary,
+input[type='reset'].button-primary,
+input[type='button'].button-primary {
+  color: var(--text-light);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type='submit'].button-primary:hover,
+input[type='reset'].button-primary:hover,
+input[type='button'].button-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+/* Optional secondary button */
+.button-secondary {
+  color: var(--text-light);
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.button-secondary:hover {
+  background-color: var(--secondary-dark);
+  border-color: var(--secondary-dark);
+}
+
+/* Optional accent button */
+.button-accent {
+  color: var(--text-light);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.button-accent:hover {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
 }

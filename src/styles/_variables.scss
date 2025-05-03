@@ -1,0 +1,41 @@
+// Color Palette
+:root {
+  // Base colors
+  --base-1: #faf8f0; // Off-White/Cream (Background/Main Area)
+  --base-2: #8fbc8f; // Desaturated Sage Green (Secondary Background/Sections)
+
+  // Primary colors
+  --primary: #2f4f4f; // Deep Forest Green/Nearly Black (Primary Text/Strong Headings)
+  --primary-light: #3d6363; // Lighter variant of Deep Forest Green
+  --primary-dark: #243c3c; // Darker variant of Deep Forest Green
+
+  // Accent color
+  --accent: #ffd700; // Soft Gold/Mustard (Accent Color for emphasis)
+  --accent-light: #ffe44d; // Lighter variant of Gold
+  --accent-dark: #e6c200; // Darker variant of Gold
+
+  // Neutral colors derived from your palette
+  --neutral-dark: #2f4f4f; // Same as primary for consistency
+  --neutral: #5a7a7a; // Medium tone derived from primary
+  --neutral-light: #d5dbdb; // Very light neutral for subtle contrasts
+
+  // Background colors
+  --background-primary: #faf8f0; // Your Base 1
+  --background-secondary: #8fbc8f; // Your Base 2
+
+  // Text colors
+  --text-primary: #2f4f4f; // Your Primary Text color
+  --text-secondary: #5a7a7a; // Lighter variant for secondary text
+  --text-light: #faf8f0; // Your Base 1 for text on dark backgrounds
+
+  // Semantic colors aligned with your palette
+  --success: #8fbc8f; // Using your Base 2 for success messaging
+  --warning: #ffd700; // Using your Accent for warnings
+  --error: #b22222; // A complementary red that works with your palette
+  --info: #5f9ea0; // A complementary blue-green that works with your palette
+
+  // Special purpose
+  --link: #1e6b6b; // A variant that complements your palette
+  --link-hover: #2f4f4f; // Your Primary color for link hover states
+  --present: #ffd700; // Using your Accent color for highlighting current items
+}
