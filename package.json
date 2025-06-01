@@ -8,8 +8,7 @@
     "deploy-gh": "ng build && npx angular-cli-ghpages --dir=dist/about-me/browser --cname=slawnet.dev --no-silent",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "test-headless": "ng test --no-watch --no-progress --browsers ChromeHeadless",
-    "serve:ssr:about-me": "node dist/about-me/server/server.mjs"
+    "test-headless": "ng test --no-watch --no-progress --browsers ChromeHeadless"
   },
   "private": true,
   "dependencies": {
