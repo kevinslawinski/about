@@ -1,61 +1,45 @@
-[![Build & Test](https://github.com/kevinslawinski/about/actions/workflows/build-and-test.yml/badge.svg?branch=main)](https://github.com/kevinslawinski/about/actions/workflows/build-and-test.yml)
+[![Site CI/CD](https://github.com/kevinslawinski/about/actions/workflows/pipeline.yml/badge.svg?branch=main)](https://github.com/kevinslawinski/about/actions/workflows/pipeline.yml)
+[![Website status](https://img.shields.io/website?url=https%3A%2F%2Fslawnet.dev&label=website)](https://slawnet.dev)
 
-# AboutMe
+# About
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
+A space on the internet that is about...me.
 
-## Development server
+**Live site:** [slawnet.dev](https://slawnet.dev)
 
-To start a local development server, run:
+## Local development
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Requires Node.js 24 and npm.
 
 ```bash
-ng generate component component-name
+npm ci
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Open `http://localhost:4200/`. The development server reloads as source files change.
+
+## Checks
+
+Run the test suite in watch mode during development:
 
 ```bash
-ng generate --help
+npm test
 ```
 
-## Building
-
-To build the project run:
+Run tests once, as in CI:
 
 ```bash
-ng build
+npm run test:ci
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Create a production build:
 
 ```bash
-ng test
+npm run build
 ```
 
-## Running end-to-end tests
+The browser-ready output is written to `dist/about-me/browser/`.
 
-For end-to-end (e2e) testing, run:
+## CI and deployment
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+The **Site CI/CD** workflow runs on pushes to `main` and `feature/**`, pull requests targeting `main`, and manual dispatches. Build and Test run independently. A successful `main` run uploads the production build and deploys it to GitHub Pages through the `github-pages` environment.

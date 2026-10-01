@@ -1,16 +1,13 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
   imports: [],
   template: `
     <div class="container">
-      <a
-        href="media/Resume_Slawinski_Kevin_052023.pdf"
-        class="noStyle button-primary"
-        target="_blank"
+      <a href="media/resume.txt" class="noStyle button-primary" target="_blank"
         >Download My Resume &nbsp;<i
-          class="fa-regular fa-file-pdf fa-xl fa-bounce"
+          class="fa-regular fa-file-lines fa-xl fa-bounce"
           style="color: black;"
         ></i
       ></a>
