@@ -76,11 +76,6 @@
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "browsers": ["chromium"]
-          },
-          "configurations": {
-            "ci": {
-              "headless": true
-            }
           }
         }
       }

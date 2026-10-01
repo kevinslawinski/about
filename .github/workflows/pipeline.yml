@@ -39,6 +39,7 @@ jobs:
   test:
     name: Test
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - uses: actions/checkout@v7
@@ -51,7 +52,7 @@ jobs:
 
       - run: npm ci
       - run: npx playwright install --only-shell chromium
-      - run: npm run test-headless
+      - run: npm run test:ci
 
   deploy:
     name: Deploy to GitHub Pages
