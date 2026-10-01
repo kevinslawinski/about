@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -70,6 +70,7 @@ import { Component } from '@angular/core';
       <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
     </div>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styles: ``,
 })
 export class ContactComponent {}
